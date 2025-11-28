@@ -18,7 +18,7 @@ const Navbar = () => {
       transition={{ duration: 0.5, delay: 0.2 }}
       className="fixed top-4 right-4 md:top-8 md:right-8 z-50"
     >
-      <div className="backdrop-blur-xl bg-white/5 border border-white/10 rounded-full px-6 py-3 shadow-2xl">
+      <div className="backdrop-blur-3xl bg-white/5 border border-white/10 rounded-full px-6 py-3 shadow-2xl">
         <ul className="flex items-center gap-2">
           {navItems.map((item) => (
             <li key={item.label}>

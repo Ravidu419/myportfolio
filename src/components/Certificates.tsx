@@ -12,16 +12,9 @@ const Certificates = () => {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const certificates = [
+    
     {
-      title: "GitHub Copilot Fundamentals",
-      issuer: "Microsoft",
-      date: "2024",
-      credentialId: "https://simpli-web.app.link/e/oZGzR8PeIWb",
-      skills: ["GitHub Copilot"],
-      image: github,
-    },
-    {
-      title: "Multicloud Network Associate",
+      title: "Multicloud Network Associate By Aviatrix",
       issuer: "Aviatrix",
       date: "2025",
       credentialId:
@@ -30,7 +23,7 @@ const Certificates = () => {
       image: multi,
     },
     {
-      title: "Introduction to Packet Tracers",
+      title: "Introduction to Packet Tracers & Network Simulation",
       issuer: "Cisco",
       date: "2025",
       credentialId:
@@ -54,6 +47,14 @@ const Certificates = () => {
       skills: ["MERN Stack", "REST APIs", "Database Design", "Authentication"],
       image: linux,
     },
+    {
+      title: "GitHub Copilot Fundamentals",
+      issuer: "Microsoft",
+      date: "2025",
+      credentialId: "https://simpli-web.app.link/e/oZGzR8PeIWb",
+      skills: ["GitHub Copilot","Version Control","Github fundamentals"],
+      image: github,
+    }
   ];
 
   const scroll = (direction: "left" | "right") => {

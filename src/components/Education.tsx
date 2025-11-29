@@ -1,27 +1,10 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Calendar, MapPin } from "lucide-react";
-
-// Correct asset folder name (must be 'assets')
-import campus from "./assests/school.jpg";
-import school from "./assests/campus.png";
+import school from "./assests/school.jpg";
+import campus from "./assests/campus.png";
 
 const Education = () => {
   const education = [
-    {
-      degree: "Bachelor of Information and Communication Technology",
-      institution: "University of Sri Jayewardenepura",
-      location: "Nugegoda, Sri Lanka",
-      period: "2023 - Present",
-      description:
-        "Specializing in Network Technologies, Full Stack Development, and Cloud Computing",
-      highlights: [
-        "Network Architecture",
-        "Software Engineering",
-        "Cloud Computing",
-        "DevOps Practices",
-      ],
-      image: campus,
-    },
     {
       degree: "G.C.E. Advanced Level (Technology Stream)",
       institution:
@@ -37,6 +20,22 @@ const Education = () => {
       ],
       image: school,
     },
+    {
+      degree: "Bachelor of Information and Communication Technology",
+      institution: "University of Sri Jayewardenepura",
+      location: "Nugegoda, Sri Lanka",
+      period: "2023 - Present",
+      description:
+        "Specializing in Network Technologies, Full Stack Development, and Cloud Computing",
+      highlights: [
+        "Network Architecture",
+        "Software Engineering",
+        "Cloud Computing",
+        "DevOps Practices",
+      ],
+      image: campus,
+    },
+    
   ];
 
   return (

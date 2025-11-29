@@ -6,9 +6,9 @@ const Projects = () => {
   const projects = [
     {
       title: 'Full Automated CI/CD Pipeline',
-      description: 'Enterprise-grade continuous integration and deployment pipeline using Jenkins, Docker, and AWS EC2 for automated testing and deployment.',
+      description: 'Enterprise-grade continuous integration and deployment pipeline using Github actions, Docker, and AWS EC2 for automated testing and deployment.',
       image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Docker', 'Jenkins', 'AWS', 'Git', 'Automation'],
+      tags: ['Docker', 'Github Actions', 'AWS', 'Git', 'Automation'],
       github: '#',
       live: '#',
     },
@@ -18,18 +18,19 @@ const Projects = () => {
       description: 'Modern e-commerce solution with React frontend, Node.js backend, MongoDB database, and integrated payment processing.',
       image: citizen,
       tags: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Express'],
-      github: '#',
+      github: 'https://github.com/hashalagayendra/Citizen-Voice.git',
       live: '#',
     },
     
     {
-      title: 'DevOps Automation Suite',
+      title: 'DevOps Automation ',
       description: 'Collection of automation scripts and tools for streamlining DevOps workflows, including deployment, monitoring, and backup.',
       image: 'https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800',
-      tags: ['Bash', 'Python', 'Docker', 'Automation', 'Scripts'],
+      tags: ['Bash', 'Docker', 'Automation', 'Scripts'],
       github: '#',
       live: '#',
     },
+
   ];
 
   return (

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
-import { User, Server, Cloud, Code2, GraduationCap, Cpu, Globe, Zap } from 'lucide-react';
+import { User, Server, Cloud, Code2, Cpu, Globe, Zap } from 'lucide-react';
+import logo from "./assests/sjp.png";
 
 const About = () => {
   const skills = [
@@ -54,9 +55,10 @@ const About = () => {
 
             <div className="inline-flex items-center gap-4 p-4 rounded-2xl bg-white/5 border border-white/10">
               <div className="p-3 rounded-xl bg-violet-500/20">
-                <GraduationCap className="w-6 h-6 text-violet-300" />
+              <img src={logo} alt="University Logo" className="w-12 h-12 object-contain" />
               </div>
               <div>
+                
                 <p className="text-xs text-gray-400 uppercase tracking-wider">Education</p>
                 <p className="text-white font-medium">BICT @ University of Sri Jayewardenepura</p>
                 <p className="text-sm text-cyan-400">Faculty of Technology</p>

@@ -1,7 +1,5 @@
 import { motion } from 'framer-motion';
 import { Download, ArrowRight } from 'lucide-react';
-
-
 import profileImg from './assests/profile4.png'; 
 import cvFile from './public/cv.pdf'; 
 
@@ -46,7 +44,7 @@ const Hero = () => {
             className="inline-block"
           >
             <span className="px-4 py-2 rounded-full bg-gradient-to-r from-violet-500/20 to-cyan-500/20 border border-violet-500/30 text-violet-300 text-sm">
-              Network Technologist | Full Stack Developer | Cloud and DevOps
+              Network Technologist | Cloud and DevOps | Full Stack Developer 
             </span>
           </motion.div>
 

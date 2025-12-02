@@ -21,26 +21,26 @@ const TechStack = () => {
   ];
 
   return (
-    // min-h-screen + flex use kara content eka center karanna
+    
     <section id="stack" className="min-h-screen w-full flex flex-col justify-center py-10 px-4 md:px-8">
       <div className="max-w-6xl mx-auto w-full">
         
-        {/* Header - Compact */}
+        
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-8"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+          <h2 className="text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
               My Tech Stack
             </span>
           </h2>
-          <p className="text-gray-400 text-sm">My technical arsenal</p>
+          <p className="text-gray-400 text-sm">My Technical Arsenal</p>
         </motion.div>
 
-        {/* Grid - Compact gap */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {techCategories.map((category, index) => {
             const isViolet = category.color === 'violet';
@@ -54,13 +54,13 @@ const TechStack = () => {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                // Height reduce kara (h-48 = 192px)
+                
                 className={`
                     group relative overflow-hidden rounded-2xl h-48 border border-white/10 
                     ${borderColor} transition-all duration-300 hover:shadow-xl cursor-default
                 `}
               >
-                {/* Background Image */}
+                
                 <div className="absolute inset-0">
                   <img 
                     src={category.image} 
@@ -69,14 +69,14 @@ const TechStack = () => {
                   />
                 </div>
 
-                {/* Overlays */}
+               
                 <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors duration-300" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
 
-                {/* Content */}
+                
                 <div className="relative z-10 p-5 h-full flex flex-col justify-end">
                   
-                  {/* Title Section - Moves up slightly on hover */}
+                 
                   <div className="transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                     <div className="flex items-center gap-3 mb-1">
                         <category.icon className={`w-5 h-5 ${accentColor}`} />
@@ -87,7 +87,7 @@ const TechStack = () => {
                     <div className={`h-0.5 w-8 rounded-full ${isViolet ? 'bg-violet-500' : 'bg-cyan-500'} mb-3`} />
                   </div>
 
-                  {/* Skills - Only visible on hover */}
+                  
                   <div className="flex flex-wrap gap-1.5 opacity-0 group-hover:opacity-100 transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 delay-75">
                     {category.skills.map((skill) => (
                       <span
@@ -104,7 +104,6 @@ const TechStack = () => {
           })}
         </div>
 
-        {/* Footer Security Section - Very Compact */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}

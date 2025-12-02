@@ -4,7 +4,7 @@ const Loading = () => {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
       <div className="relative">
-        {/* Spinning Outer Ring */}
+        
         <motion.div
           animate={{
             rotate: 360,
@@ -17,7 +17,7 @@ const Loading = () => {
           className="w-24 h-24 rounded-full border-t-4 border-l-4 border-violet-500 border-opacity-50"
         />
         
-        {/* Spinning Inner Ring (Reverse Direction) */}
+        
         <motion.div
           animate={{
             rotate: -360,
@@ -30,7 +30,7 @@ const Loading = () => {
           className="absolute inset-2 rounded-full border-b-4 border-r-4 border-cyan-500 border-opacity-50"
         />
 
-        {/* Pulsing Text in Center */}
+        
         <motion.div
           animate={{
             opacity: [0.5, 1, 0.5],

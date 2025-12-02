@@ -65,9 +65,10 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-xl text-gray-400 max-w-xl"
+            
+            className="text-xl text-gray-400 max-w-xl text-justify"
           >
-            I 'm <span className="text-cyan-400 text-center font-semibold ">Ravidu Dilshan.</span><br/>Welcome to my portfolio! I’m passionate about building modern, Efficient, and Secure Digital Solutions. Explore my work to Learn more about my Skills in Full Stack development , Cloud and DevOps technologies.
+            I'm <span className="text-cyan-400 text-center font-semibold ">Ravidu Dilshan.</span><br/>Welcome to my portfolio! I’m passionate about building modern, Efficient, and Secure Digital Solutions. Explore my work to Learn more about my Skills in Full Stack development, Cloud and DevOps technologies.
           </motion.p>
 
           <motion.div
@@ -78,13 +79,13 @@ const Hero = () => {
           >
             <a
               href="#projects"
-              className="group px-8 py-4 rounded-full bg-gradient-to-r from-violet-600 to-cyan-600 text-white font-medium flex items-center gap-2 hover:shadow-lg hover:shadow-violet-500/50 transition-all duration-300"
+              
+              className="group px-8 py-4 rounded-full bg-gradient-to-r from-violet-900 to-cyan-300 hover:from-violet-700 hover:to-cyan-500 text-white font-medium flex items-center gap-2 hover:shadow-lg hover:shadow-violet-500/50 transition-all duration-300"
             >
               View Projects
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             
-           
             <a 
               href={cvFile}  
               download="Ravidu_Dilshan_CV.pdf" 
@@ -96,7 +97,6 @@ const Hero = () => {
           </motion.div>
         </motion.div>
 
-        
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}

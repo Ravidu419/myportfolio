@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { User, Server, Cloud, Code2, Cpu, Globe, Zap } from 'lucide-react';
-import logo from "./assests/sjp.png"; // Make sure folder name is correct (assets vs assests)
-
+import logo from "./assests/sjp.png"; 
 const About = () => {
   const skills = [
     { icon: Server, title: "DevOps", desc: "CI/CD & Automation", color: "text-violet-400" },
@@ -35,7 +34,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            // UPDATED STYLE: Added gradient background and shadow effects
+           
             className="lg:col-span-2 p-8 rounded-3xl backdrop-blur-xl bg-gradient-to-br from-white/10 to-white/5 border border-white/10 hover:border-violet-500/30 shadow-2xl hover:shadow-violet-500/10 transition-all duration-300 relative overflow-hidden group"
           >
             <div className="absolute top-0 right-0 w-64 h-64 bg-violet-500/10 rounded-full blur-3xl -z-10 group-hover:bg-violet-500/20 transition-all duration-500" />
@@ -47,19 +46,19 @@ const About = () => {
               <h3 className="text-2xl font-bold text-white">Who Am I?</h3>
             </div>
 
-            {/* ADDED: text-justify class */}
+            
             <p className="text-gray-300 leading-relaxed mb-6 text-lg text-justify">
               I'm <span className="text-white font-semibold">Ravidu Dilshan</span>, a passionate technologist bridging the gap between <span className="text-cyan-400">Full stack Development</span> and <span className="text-violet-800">DevOps Technologies</span>.
             </p>
             
-            {/* ADDED: text-justify class */}
+            
             <p className="text-gray-400 leading-relaxed mb-8 text-justify">
               I am an undergraduate student studying BICT (Hons) at the University of Sri Jayewardenepura, specializing in Network Technology. Throughout my degree, I have developed a strong interest in computer networks, cybersecurity, DevOps, cloud computing, and modern cloud-based systems. I enjoy learning how large systems work, how data moves across networks, and how technology can be used to build fast, secure, and reliable services.
             </p>
 
             <div className="inline-flex items-center gap-4 p-4 rounded-2xl bg-black/20 border border-white/5 hover:border-white/10 transition-colors">
               <div className="p-3 rounded-xl bg-violet-500/20">
-                 {/* FIXED: Img tag included properly */}
+                 
                  <img src={logo} alt="University Logo" className="w-10 h-10 object-contain" />
               </div>
               <div>

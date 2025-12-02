@@ -72,7 +72,7 @@ const Certificates = () => {
     <section id="certs" className="min-h-screen py-20 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         
-        {/* Header */}
+        
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -82,16 +82,16 @@ const Certificates = () => {
         >
           <h2 className="text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              Certifications
+             My Certifications
             </span>
           </h2>
           <p className="text-gray-400 text-lg">Professional credentials and achievements</p>
         </motion.div>
 
-        {/* Carousel Wrapper */}
+       
         <div className="relative">
 
-          {/* LEFT ARROW */}
+          
           <button
             onClick={() => scroll("left")}
             className="absolute left-2 top-1/2 -translate-y-1/2 z-20 
@@ -103,7 +103,7 @@ const Certificates = () => {
             <ChevronLeft className="w-6 h-6" />
           </button>
 
-          {/* RIGHT ARROW */}
+          
           <button
             onClick={() => scroll("right")}
             className="absolute right-2 top-1/2 -translate-y-1/2 z-20
@@ -115,7 +115,7 @@ const Certificates = () => {
             <ChevronRight className="w-6 h-6" />
           </button>
 
-          {/* Scroll Container */}
+          
           <div
             ref={scrollContainerRef}
             className="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory scroll-smooth"
@@ -124,7 +124,7 @@ const Certificates = () => {
               msOverflowStyle: "none",
             }}
           >
-            {/* Hide scrollbar for Chrome/Safari */}
+           
             <style>
               {`
               div::-webkit-scrollbar {
@@ -146,7 +146,7 @@ const Certificates = () => {
                                 border border-white/10 rounded-3xl p-6 hover:border-violet-500/50 
                                 transition-all duration-300 group hover:scale-105 flex flex-col">
 
-                  {/* Top Icons */}
+                  
                   <div className="flex items-start justify-between mb-4">
                     <div className="p-3 rounded-2xl bg-gradient-to-br from-violet-500/20 to-cyan-500/20 
                                     border border-violet-500/30 group-hover:scale-110 transition-transform">
@@ -161,7 +161,7 @@ const Certificates = () => {
                     </motion.div>
                   </div>
 
-                  {/* Image */}
+                  
                   <div className="w-full h-48 mb-6 rounded-2xl overflow-hidden border border-white/10 
                                   relative group-hover:border-violet-500/30 transition-colors">
                     <img
@@ -173,12 +173,12 @@ const Certificates = () => {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                   </div>
 
-                  {/* Text */}
+                  
                   <h3 className="text-xl font-bold text-white mb-2">{cert.title}</h3>
                   <p className="text-cyan-400 font-semibold mb-1">{cert.issuer}</p>
                   <p className="text-gray-400 text-sm mb-4">Issued: {cert.date}</p>
 
-                  {/* Skills */}
+                 
                   <div className="flex flex-wrap gap-2 mb-6">
                     {cert.skills.map((skill) => (
                       <span
@@ -191,7 +191,7 @@ const Certificates = () => {
                     ))}
                   </div>
 
-                  {/* Button */}
+                 
                   <a
                     href={cert.credentialId}
                     target="_blank"
@@ -212,7 +212,7 @@ const Certificates = () => {
             ))}
           </div>
 
-          {/* Edge Gradient */}
+         
           <div className="absolute left-0 top-0 bottom-8 w-20 bg-gradient-to-r from-black to-transparent pointer-events-none" />
           <div className="absolute right-0 top-0 bottom-8 w-20 bg-gradient-to-l from-black to-transparent pointer-events-none" />
         </div>

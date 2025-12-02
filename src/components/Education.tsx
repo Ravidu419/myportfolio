@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { GraduationCap, Calendar, MapPin } from "lucide-react";
-import school from "./assests/school.jpg"; // Make sure path is correct
+import school from "./assests/school.jpg"; 
 import campus from "./assests/campus.png";
 
 const Education = () => {
@@ -26,28 +26,28 @@ const Education = () => {
   ];
 
   return (
-    // Section background eka poddak eliya kala (optional, depends on global bg)
+    
     <section className="min-h-screen flex flex-col justify-center py-10 px-4 md:px-8">
       <div className="max-w-5xl mx-auto w-full">
         
-        {/* Header */}
+        
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-10"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">
+          <h2 className="text-5xl font-bold mb-4">
             <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">
-              Education
+             My Education
             </span>
           </h2>
           <p className="text-gray-300 text-sm">My academic milestones</p>
         </motion.div>
 
-        {/* Timeline Container */}
+        
         <div className="relative">
-          {/* Vertical Line - Brightened opacity */}
+          
           <div className="absolute left-4 top-2 bottom-0 w-0.5 bg-gradient-to-b from-violet-500 via-cyan-500 to-violet-500 opacity-50" />
 
           {education.map((edu, index) => (
@@ -59,37 +59,36 @@ const Education = () => {
               transition={{ duration: 0.5, delay: index * 0.2 }}
               className="relative pl-12 pb-8 last:pb-0"
             >
-              {/* Timeline Dot */}
+              
               <motion.div
                 className="absolute left-[9px] top-0 w-4 h-4 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500 border-2 border-white/20 z-10 shadow-[0_0_10px_rgba(139,92,246,0.3)]"
                 whileInView={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 2, repeat: Infinity }}
               />
 
-              {/* Card - Brightened Borders and Background tint */}
               <div className="group relative overflow-hidden rounded-2xl border border-white/20 bg-white/5 hover:border-violet-500/50 transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,0,0,0.2)]">
                 
-                {/* Background Image with Lighter Overlay */}
+                
                 <div className="absolute inset-0 z-0">
-                  {/* Image opacity reduced so it's not too dark */}
+                  
                   <img
                     src={edu.image}
                     alt={edu.institution}
                     className="w-full h-full object-cover opacity-50 group-hover:scale-105 transition-transform duration-700"
                   />
-                  {/* Lighter dark overlay (bg-black/40 instead of 80) */}
+                  
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
-                  {/* Gradient only at the bottom for text readability */}
+                  
                   <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
                 </div>
 
-                {/* Content */}
+                
                 <div className="relative z-10 p-5 md:p-6">
                   <div className="flex flex-col md:flex-row gap-4 md:items-start justify-between">
                     
-                    {/* Main Info */}
+                   
                     <div className="flex gap-4">
-                      {/* Icon Box brightened */}
+                     
                       <div className="p-2.5 h-fit rounded-xl bg-violet-500/30 border border-violet-500/40 backdrop-blur-md shadow-inner">
                         <GraduationCap className="w-6 h-6 text-violet-200" />
                       </div>
@@ -101,12 +100,12 @@ const Education = () => {
                         <p className="text-cyan-300 font-medium text-sm mb-2">
                           {edu.institution}
                         </p>
-                        {/* Text color brightened to gray-300 */}
+                        
                         <p className="text-gray-300 text-xs md:text-sm max-w-xl mb-3 leading-relaxed">
                           {edu.description}
                         </p>
 
-                        {/* Highlights - Brighter badges */}
+                       
                         <div className="flex flex-wrap gap-1.5">
                           {edu.highlights.map((highlight) => (
                             <span
@@ -120,7 +119,7 @@ const Education = () => {
                       </div>
                     </div>
 
-                    {/* Metadata - Brighter badges */}
+                    
                     <div className="flex md:flex-col gap-3 md:gap-2 pl-12 md:pl-0 mt-2 md:mt-0 min-w-fit">
                       <div className="flex items-center gap-2 text-gray-200 bg-black/30 px-3 py-1.5 rounded-lg border border-white/10 w-fit backdrop-blur-sm">
                         <Calendar className="w-3.5 h-3.5 text-violet-300" />
